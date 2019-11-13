@@ -1,0 +1,23 @@
+{
+  "name": "final-pro",
+  "version": "1.0.0",
+  "description": "final year project is on!..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BalajiDuraisamy321/fypro.git"
+  },
+  "keywords": [
+    "final",
+    "pro"
+  ],
+  "author": "BalajiDuraisamy321",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BalajiDuraisamy321/fypro/issues"
+  },
+  "homepage": "https://github.com/BalajiDuraisamy321/fypro#readme"
+}
