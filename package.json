@@ -4,7 +4,7 @@
   "description": "final year project is on!..",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/BalajiDuraisamy321/fypro/issues"
   },
-  "homepage": "https://github.com/BalajiDuraisamy321/fypro#readme"
+  "homepage": "https://github.com/BalajiDuraisamy321/fypro#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13",
+    "nodemon": "^2.0.1"
+  }
 }
