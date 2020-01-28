@@ -6,14 +6,24 @@ const mongoose = require("mongoose");
 const authRouters = require("./Auth/router");
 dotenv.config();
 //connect to mongodb
-mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true },() => {
-        console.log("connected to DB");
-    });
-
+const connectDB = async () => {
+    try {
+        await mongoose.connect(process.env.DB_CONNECT, {
+            useNewUrlParser: true,
+            useCreateIndex: true,
+            useUnifiedTopology: true,
+            useFindAndModify: false
+        });
+        console.log("MongoDB Conected")
+    } catch (err) {
+        console.error(err.message);
+    }
+};
+connectDB();
 //Middleware
 app.use(express.json());    
 //use middleware
-app.use("/app/signup" , authRouters);
+app.use("/user/signin" , authRouters);
 
 app.listen(3000 , () => {
     console.log("server is Running");

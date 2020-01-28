@@ -1,7 +1,7 @@
 const routers = require("express").Router();
 const User = require("../model/user");
 
-routers.post("/register", async (req,res) => {
+routers.post("/registerer", async (req,res) => {
     const user = new User({
         name:req.body.name,
         email:req.body.email,
